@@ -31,8 +31,23 @@ section {
   height: 700px;
 }
 
-.dark {
+.dark-bg {
   background-color: #666;
+}
+
+.dark-text {
+  color: #000;
+}
+
+.light-text {
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .logo {
@@ -42,6 +57,11 @@ section {
 .nav-item {
   display: inline-block;
   padding: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-item:hover {
