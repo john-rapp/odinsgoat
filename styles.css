@@ -10,14 +10,12 @@ body {
 }
 
 nav {
-  background-color: #fff;
-  color: #122121;
   height: 60px;
   width: 100%;
   text-align: right;
   position: fixed;
   top: 0;
-  transition: 0.3s;
+  transition: top 0.3s;
 }
 
 nav ul {
@@ -45,6 +43,10 @@ section {
   background-color: #122121;
 }
 
+.dark-text {
+  color: #122121;
+}
+
 .footer-item {
   padding: 0 10px;
 }
@@ -55,7 +57,7 @@ section {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url('glen-bg-lg.jpg');
   background-size: cover;
   background-position: center;
