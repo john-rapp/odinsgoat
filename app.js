@@ -1,7 +1,8 @@
 var navbar = document.querySelector('nav');
-var navBox = navbar.getBoundingClientRect();
 var lightSection = document.querySelector('.light-bg');
 var lightSectionBox = lightSection.getBoundingClientRect();
+var lightTop = lightSectionBox.top + window.scrollY;
+var lightBottom = lightSectionBox.bottom + window.scrollY;
 var lastScroll = 0;
 
 window.onscroll = () => {
@@ -10,7 +11,7 @@ window.onscroll = () => {
 };
 
 toggleNav = () => {
-  var currentY = window.pageYOffset;
+  var currentY = window.scrollY;
   if (lastScroll > currentY || lastScroll === 0) {
     navbar.style.top = '0';
   } else {
@@ -20,10 +21,7 @@ toggleNav = () => {
 };
 
 swapNavColor = () => {
-  var lightTop = lightSectionBox.top;
-  var lightBottom = lightSectionBox.bottom;
-  var currentY = window.pageYOffset + 15;
-
+  var currentY = window.scrollY + 15;
   if (
     currentY > lightTop &&
     currentY < lightBottom &&
