@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat';
+  font-size: 20px;
   color: #fff;
 }
 
@@ -29,22 +30,30 @@ footer {
 }
 
 section {
-  display: flex;
-  height: 700px;
   padding: 4%;
 }
 
 .big-section-text {
   align-self: center;
   font-size: 5em;
+  padding: 12% 0;
+}
+
+.center {
+  text-align: center;
 }
 
 .dark-bg {
   background-color: #122121;
 }
 
-.dark-text {
+.dark-text,
+.light-bg {
   color: #122121;
+}
+
+.flex {
+  display: flex;
 }
 
 .footer-item {
@@ -61,7 +70,6 @@ section {
     url('glen-bg-lg.jpg');
   background-size: cover;
   background-position: center;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -69,7 +77,6 @@ section {
 
 .hero-text {
   align-self: flex-end;
-  display: flex;
   justify-content: space-between;
   padding: 50px;
 }
@@ -107,8 +114,8 @@ section {
 }
 
 .row {
+  margin-bottom: 4%;
   width: 100%;
-  text-align: center;
 }
 
 .section-icon-light {
@@ -122,6 +129,11 @@ section {
   padding: 10px 20px;
   border-top: 1px solid #122121;
   border-bottom: 1px solid #122121;
+}
+
+.section-text {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 #contact {
