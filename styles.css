@@ -6,11 +6,12 @@
 
 body {
   font-family: 'Montserrat';
+  color: #fff;
 }
 
 nav {
   background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  color: #122121;
   height: 60px;
   width: 100%;
   text-align: right;
@@ -24,32 +25,38 @@ nav ul {
 }
 
 footer {
-  color: #ccc;
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
+  color: #3d5252;
+  padding: 50px;
+  text-align: right;
 }
 
 section {
+  display: flex;
   height: 700px;
+  padding: 4%;
+}
+
+.big-section-text {
+  align-self: center;
+  font-size: 5em;
 }
 
 .dark-bg {
-  background-color: #666;
+  background-color: #122121;
 }
 
-.dark-text {
-  color: #000;
+.footer-item {
+  padding: 0 10px;
 }
 
-.light-text {
+.footer-item:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 .hero {
-  color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('glen-bg.jpg');
+    url('glen-bg-lg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -89,6 +96,32 @@ section {
   color: inherit;
 }
 
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
 .nav-item:hover {
   cursor: pointer;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+.section-icon-light {
+  padding: 10px 20px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.section-icon-dark {
+  color: #122121;
+  padding: 10px 20px;
+  border-top: 1px solid #122121;
+  border-bottom: 1px solid #122121;
+}
+
+#contact {
+  justify-content: center;
 }
