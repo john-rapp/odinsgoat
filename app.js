@@ -21,7 +21,7 @@ toggleNav = () => {
 };
 
 swapNavColor = () => {
-  var currentY = window.scrollY + 15;
+  var currentY = window.scrollY - 20;
   if (
     currentY > lightTop &&
     currentY < lightBottom &&
