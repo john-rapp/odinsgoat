@@ -21,6 +21,7 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "eslint-config-airbnb": "^17.1.0"
   }
 }
