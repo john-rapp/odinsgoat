@@ -83,7 +83,7 @@ section {
 .hero-text {
   align-items: baseline;
   align-self: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 50px;
   width:100%;
 
@@ -92,7 +92,9 @@ section {
   }
 
   span {
-  float: right;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
   }
 }
 
