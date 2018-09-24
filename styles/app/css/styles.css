@@ -79,8 +79,9 @@ section {
     bottom: 3%; }
 
 .logo {
-  max-width: 100%;
-  padding: 5%;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   -webkit-filter: invert(100%);
           filter: invert(100%); }
 
