@@ -123,5 +123,21 @@ section {
 .section-title {
   font-weight: 100; }
 
+.tile {
+  width: 48%;
+  margin-bottom: 25px; }
+  .tile .fas {
+    margin: 10px; }
+  .tile p {
+    text-align: justify; }
+  @media screen and (max-width: 749px) {
+    .tile {
+      width: 100%; } }
+
+#about .flex {
+  max-width: 950px;
+  margin: 0 auto;
+  justify-content: space-between; }
+
 #contact {
   justify-content: center; }
