@@ -1,14 +1,14 @@
-var navbar = document.querySelector('nav');
+// var navbar = document.querySelector('nav');
 var lightSection = document.querySelector('.light-bg');
 var lightSectionBox = lightSection.getBoundingClientRect();
 var lightTop = lightSectionBox.top + window.scrollY;
 var lightBottom = lightSectionBox.bottom + window.scrollY;
 var lastScroll = 0;
 
-window.onscroll = () => {
-  toggleNav();
-  swapNavColor();
-};
+// window.onscroll = () => {
+//   toggleNav();
+//   swapNavColor();
+// };
 
 toggleNav = () => {
   var currentY = window.scrollY;

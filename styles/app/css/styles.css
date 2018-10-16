@@ -26,6 +26,9 @@ footer {
   color: #3d5252;
   padding: 50px;
   text-align: right; }
+  @media screen and (max-width: 749px) {
+    footer {
+      text-align: center; } }
 
 section {
   padding: 4%; }
@@ -47,7 +50,8 @@ section {
 
 .flex {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .footer-item {
   padding: 0 10px;
@@ -73,12 +77,15 @@ section {
   width: 100%; }
   .hero-text h1 {
     font-weight: 100; }
-  .hero-text span {
+  .hero-text a {
+    color: #fff;
+    text-decoration: none;
     position: absolute;
     right: 2%;
     bottom: 3%; }
 
 .logo {
+  padding-top: 50px;
   width: 100%;
   height: auto;
   max-width: 600px;
@@ -118,18 +125,23 @@ section {
 
 .section-text {
   max-width: 750px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: justify; }
 
 .section-title {
   font-weight: 100; }
 
 .tile {
   width: 48%;
-  margin-bottom: 25px; }
+  margin-bottom: 30px; }
   .tile .fas {
-    margin: 10px; }
+    margin: 15px; }
   .tile p {
-    text-align: justify; }
+    text-align: justify;
+    margin: 0 auto; }
+    @media screen and (max-width: 749px) {
+      .tile p {
+        max-width: 400px; } }
   @media screen and (max-width: 749px) {
     .tile {
       width: 100%; } }
