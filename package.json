@@ -31,12 +31,5 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1"
   },
-<<<<<<< HEAD
   "dependencies": {}
-=======
-  "dependencies": {
-    "animate.css": "^3.7.0",
-    "eslint-config-airbnb": "^17.1.0"
-  }
->>>>>>> placeholder
 }

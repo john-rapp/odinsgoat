@@ -7,23 +7,18 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
 }
 
-nav {
-  font-family: 'Nunito', sans-serif;
-  height: 60px;
-  width: 100%;
-  text-align: right;
-  padding: 0 50px;
-  position: fixed;
-  top: 0;
-  transition: top 0.3s;
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
 }
 
-nav ul {
-  list-style-type: none;
+hr {
+  width: 1em;
+  margin: 15px auto;
 }
 
 footer {
@@ -31,13 +26,13 @@ footer {
   padding: 50px;
   text-align: right;
 
-    @media screen and (max-width: 749px) {
+  @media screen and (max-width: 749px) {
     text-align: center;
   }
 }
 
 section {
-  padding: 4%;
+  padding: 5%;
 }
 
 .big-section-text {
@@ -86,22 +81,25 @@ section {
 }
 
 .hero-text {
-  align-items: baseline;
   align-self: flex-end;
-  justify-content: center;
-  padding: 50px;
-  width:100%;
+  padding: 15px;
+  width: 100%;
 
   h1 {
-  font-weight: 100;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 699px) {
+      margin-bottom: 30px;
+    }
   }
 
   a {
-  color: #fff;
-  text-decoration: none;
-  position: absolute;
-  right: 2%;
-  bottom: 3%;
+    display: block;
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -110,31 +108,9 @@ section {
   width: 100%;
   height: auto;
   max-width: 600px;
-  filter: invert(100%);
-}
-
-.nav-item {
-  display: inline-block;
-  line-height: 60px;
-}
-
-.nav-item a {
-  font-size: 0.8em;
-  padding-left: 15px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-item a:hover {
-  text-decoration: underline;
-}
-
-.nav-item:hover {
-  cursor: pointer;
 }
 
 .row {
-  margin-bottom: 4%;
   width: 100%;
 }
 
@@ -163,7 +139,8 @@ section {
 
 .tile {
   width: 48%;
-  margin-bottom: 30px;
+  padding: 15px;
+  margin-bottom: 15px;
 
   .fas {
     margin: 15px;
@@ -181,6 +158,11 @@ section {
   @media screen and (max-width: 749px) {
     width: 100%;
   }
+}
+
+.work-description {
+  max-width: 1100px;
+  margin: auto;
 }
 
 #about {
